@@ -71,7 +71,7 @@ TokenTree =
 MacroItems =
   Item*
 
-MacroStmts =
+StmtList =
   statements:Stmt*
   Expr?
 
@@ -367,8 +367,7 @@ PathExpr =
 BlockExpr =
   '{'
     Attr*
-    statements:Stmt*
-    Expr?
+    stmts:StmtList
   '}'
 
 RefExpr =
